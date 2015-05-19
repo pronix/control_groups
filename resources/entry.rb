@@ -11,4 +11,7 @@ attribute :cpuacct, :kind_of => Hash
 attribute :devices, :kind_of => Hash
 attribute :freezer, :kind_of => Hash
 attribute :memory, :kind_of => Hash
+attribute :cpuset, :kind_of => Hash
+attribute :net_cls, :kind_of => Hash
+attribute :blkio, :kind_of => Hash
 attribute :extra_config, :kind_of => Hash
