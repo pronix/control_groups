@@ -9,6 +9,7 @@ end
 
 pkgs.each do |pkg_name|
   package pkg_name
+  options node['control_groups']['package_options']
 end
 
 cgred_resource = service 'cgred' do
