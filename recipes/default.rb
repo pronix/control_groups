@@ -15,13 +15,11 @@ pkgs.each do |pkg_name|
 end
 
 cgred_resource = service 'cgred' do
-  provider Chef::Provider::Service::Upstart
   supports :status => true, :start => true, :stop => true, :reload => true
   action :nothing
 end
 
 cgconfig_resource = service 'cgconfig' do
-  provider Chef::Provider::Service::Upstart
   supports :status => true, :start => true, :stop => true, :reload => true
   ignore_failure true
   action :nothing
